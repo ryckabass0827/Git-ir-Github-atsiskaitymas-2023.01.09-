@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Open+Sans:wght@300&display=swap');
+
 body {
     background-image: url(/images/bg.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     height: 100vh;
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
@@ -25,6 +28,7 @@ main {
 nav {
     border-top: 1px white solid;
     margin-top: 50px;
+
 }
 
 nav ul {
@@ -42,11 +46,19 @@ li {
     justify-content: center;
     text-decoration: none;
     margin-top: 50px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+li :hover {
+    background-color: aliceblue;
+    background-size: cover;
 }
 
 p {
     color: white;
     margin-top: 50px;
+    font-size: larger;
 }
 
 p>a {
@@ -55,6 +67,7 @@ p>a {
 
 h1 {
     color: white;
+
 }
 
 a {
@@ -68,6 +81,7 @@ a {
 
 .content.active {
     display: block;
+
 }
 
 .window {
@@ -76,14 +90,33 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 20px;
     z-index: 10;
+    border-radius: 10px;
+    background-color: rgb(8, 8, 8);
 }
 
 .window .close {
     position: absolute;
-    top: 0;
+    top: -30px;
     right: 0;
     cursor: pointer;
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.window .close :hover {
+    rotate: 45deg;
+}
+
+img {
+    max-width: 600px;
+}
+
+.close {
+    display: hidden;
+
 }

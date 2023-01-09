@@ -12,15 +12,33 @@
     <header> <!-- EMPTY --></header>
     <main>
         <h1>METAVERSE</h1>
-        <p>INNOVATION THAT WILL SHAPE HOW WE <a href="#">CONNECT</a> IN THE WORLD AN <a href="#">OPPORTUNITY</a> FOR EVERYBODY.</p>
-        <nav>
-          <ul>
-            <li><a href="#">INTRO</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
+    <p>INNOVATION THAT WILL SHAPE HOW WE <a href="#">CONNECT</a> IN THE WORLD AN <a href="#">OPPORTUNITY</a> FOR EVERYBODY.</p>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('intro')">INTRO</a></li>
+      <li><a href="#" onclick="showContent('work')">WORK</a></li>
+      <li><a href="#" onclick="showContent('about')">ABOUT</a></li>
+      <li><a href="#" onclick="showContent('contact')">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="hidden">
+    <div id="intro" class="content active">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae itaque possimus recusandae, doloribus quibusdam deleniti sapiente explicabo sed distinctio id eum consectetur at non necessitatibus, a rem pariatur adipisci? Deserunt.</p>
+    </div>
+    <div id="work" class="content">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae itaque possimus recusandae, doloribus quibusdam deleniti sapiente explicabo sed distinctio id eum consectetur at non necessitatibus, a rem pariatur adipisci? Deserunt.</p>
+    </div>
+    <div id="about" class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aperiam ab libero, non atque provident. Dolore voluptatem provident, reprehenderit, id eius cum tempore, labore dolorem beatae laudantium corporis. Assumenda, maxime?</p>
+    </div>
+    <div id="contact" class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem iusto maxime, delectus nesciunt dolore sunt corrupti omnis nemo asperiores! Mollitia veritatis quod necessitatibus enim nobis consectetur harum odit distinctio.</p>
+    </div>
+  </div>
+  <div id="window" class="window hidden">
+    <div class="close" onclick="closeWindow()">x</div>
+    <div id="window-content"></div>
+  </div>
     </main>
     <footer> <!-- EMPTY --></footer>
     

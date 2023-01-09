@@ -1,12 +1,20 @@
-function showContent(id) {
-    let elements = document.getElementsByClassName('content');
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].classList.remove('active');
+const showContent = id => {
+    let contentDivs = document.querySelectorAll('.content');
+    for (let div of contentDivs) {
+        div.classList.remove('active');
+        div.style.display = 'none';
     }
-    let content = document.getElementById(id).innerHTML;
-    document.getElementById('window-content').innerHTML = content;
-    document.getElementById('window').classList.remove('hidden');
-}
-function closeWindow() {
-    document.getElementById('window').classList.add('hidden');
-}
+    let selectedDiv = document.getElementById(id);
+    selectedDiv.classList.add('active');
+    selectedDiv.style.display = 'block';
+    let windowDiv = document.getElementById('window');
+    windowDiv.classList.remove('hidden');
+    let windowContentDiv = document.getElementById('window-content');
+    windowContentDiv.innerHTML = selectedDiv.innerHTML;
+};
+const closeWindow = () => {
+    let windowDiv = document.getElementById('window');
+    windowDiv.classList.add('hidden');
+    let windowContentDiv = document.getElementById('window-content');
+    windowContentDiv.innerHTML = '';
+};

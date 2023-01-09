@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hidden {
     display: none;
 }
@@ -22,4 +23,68 @@
     top: 0;
     right: 0;
     cursor: pointer;
+=======
+body {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+main {
+    width: 80%;
+    border-top: 1px solid white;
+    margin-top: 15%;
+
+
+}
+
+nav {
+    border-top: 1px white solid;
+    margin-top: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    width: 100px;
+    height: 50px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+p {
+    color: white;
+    margin-top: 50px;
+}
+
+p>a {
+    text-decoration: underline dotted;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+>>>>>>> styles
 }

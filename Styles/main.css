@@ -8,7 +8,6 @@ body {
     margin: 0 auto;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,13 +58,15 @@ p {
     margin-top: 50px;
     font-size: larger;
     max-width: 90%;
+}
+
+#par {
     text-align: center;
 }
 
 main>p :hover {
-    color: red;
+    color: rgb(30, 151, 207);
     transition: 1s;
-
 }
 
 .line {
@@ -79,13 +80,16 @@ p>a {
 
 h1 {
     color: white;
+    text-align: center;
 
 }
 
 h3 {
     color: white;
     text-align: left;
-    text-decoration: underline;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    width: fit-content;
 }
 
 a {
@@ -105,11 +109,14 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid black;
-    padding: 20px;
+    border: 30px solid black;
     z-index: 10;
     border-radius: 10px;
-    background-color: rgb(8, 8, 8);
+    background-color: black;
+}
+
+.window-content>p {
+    text-align: start;
 }
 
 .window .close {
@@ -118,11 +125,11 @@ a {
     right: 0;
     cursor: pointer;
     color: white;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 600;
+    text-align: center;
 
 }
-
 
 img {
     max-width: 600px;
@@ -141,5 +148,41 @@ video {
 }
 
 .close:hover {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 150px 20px 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        font-weight: 300;
+        height: 50px;
+
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    p {
+        padding: auto;
+        text-align: start;
+    }
+
+    .window {
+        width: 80%;
+        height: 80%;
+    }
 }
